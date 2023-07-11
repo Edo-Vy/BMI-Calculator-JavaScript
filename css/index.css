@@ -61,7 +61,7 @@ body {
     color: #ffff;
     margin: 5px 0;
     /* bỏ viền đen */
-    outline: none;  
+    outline: none!important;  
 }
 
 
