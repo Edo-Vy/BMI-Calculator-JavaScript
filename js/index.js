@@ -4,6 +4,9 @@
  *    + Chỉ số BMI của bạn là 18,5 đến 24,9: Bạn đang sở hữu cân nặng khỏe mạnh
  *    + Chỉ số BMI của bạn là 25 đến 29,9: Bạn đang trong tình trạng thừa cân
  *    + Chỉ số BMI của bạn từ 30 trở lên: Bạn đang bị béo phì 
+ *       + Béo phì độ I 30 - 34,9
+ *       + Béo phì độ II 35 - 39,9
+ *       + Béo phì độ III ≥ 40
  */
 
 
@@ -37,7 +40,7 @@ function calculateBMI() { // input : height, weight
    } else{
        weightStatus = true;
    }
-    // document.getElementById('title_des').style.display = 'none';
+    document.getElementById('result__des').style.display = 'none';
     if( calBMI <= 18.5){
 
         imgOut.src = '../img/body-1.png';
@@ -59,5 +62,8 @@ function calculateBMI() { // input : height, weight
         imgOut.src = '../img/body-6.png';
         result.innerHTML = 'Super obesity : '+ calBMI;
     }
+    setTimeout(function () {
+        document.getElementById('result__des').style.display = 'block';
+      }, 500)
 
 }

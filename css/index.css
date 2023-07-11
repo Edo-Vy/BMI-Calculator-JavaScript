@@ -7,7 +7,7 @@
 html,
 body {
 
-    font-family: "br_omega", sans-serif;
+    font-family:  'Crimson Text', serif;
     background: linear-gradient(to left, #9d33f3, #8d33f3);
     color: #ffff;
     background-size: cover;
@@ -37,6 +37,7 @@ body {
 .main__header {
 
     font-size: 35px;
+    font-weight: 700;
     margin-bottom: 20px;
 
 }
@@ -59,12 +60,14 @@ body {
     transition: 0.5s;
     color: #ffff;
     margin: 5px 0;
-
+    /* bỏ viền đen */
+    outline: none;  
 }
 
 
-.input__type::placeholder {
+.input__type::placeholder { 
     color: #ffff;
+    
 }
 
 .input__type:hover {
